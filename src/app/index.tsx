@@ -1,4 +1,5 @@
 import { Header } from "@/components/header";
+import { Banner } from "@/components/banner";
 import { Text, View, ScrollView } from "react-native";
 
 import Constants from "expo-constants";
@@ -13,6 +14,8 @@ export default function Index() {
     >
         <View className="w-full px-4" style={{marginTop: statusBarHeight + 8}}>
             <Header />
+
+            <Banner />
         </View>
     </ScrollView>
   );
