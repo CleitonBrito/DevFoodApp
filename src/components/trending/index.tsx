@@ -14,17 +14,17 @@ export interface FoodPropos {
 }
 
 export function TrendingFoods() {
-const [foods, setFoods] = useState<FoodPropos[]>([])
+    const [foods, setFoods] = useState<FoodPropos[]>([])
 
-useEffect(() => {
-    async function getFoods(){
-        const response = await fetch("http://localhost:3000/foods")
-        const data = await response.json()
-        setFoods(data)
-    }
+    useEffect(() => {
+        async function getFoods(){
+            const response = await fetch("http://localhost:3000/foods")
+            const data = await response.json()
+            setFoods(data)
+        }
 
-    getFoods();
-}, [])
+        getFoods();
+    }, [])
  return (
     <FlatList
         data={foods}
