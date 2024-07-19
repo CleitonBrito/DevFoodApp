@@ -7,6 +7,7 @@ import { Section } from "@/components/section";
 import { TrendingFoods } from "@/components/trending";
 import { FamousRestaurants } from "@/components/famousRestaurants";
 import { Restaurants } from "@/components/restaurants";
+import { Banner } from "@/components/banner"
 
 const statusBarHeight = Constants.statusBarHeight
 
@@ -19,6 +20,8 @@ export default function Index() {
     >
         <View className="w-full px-4" style={{marginTop: statusBarHeight + 8}}>
             <Header
+            />
+            <Banner 
             />
             <Search
             />
