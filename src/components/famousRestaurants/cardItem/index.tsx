@@ -1,7 +1,7 @@
 import { Pressable, Text, Image } from 'react-native';
 import { restaurantsProps } from '..';
 
-export default function CardItemsRestaurants({ item} : { item :  restaurantsProps}) {
+export function CardItemsRestaurants({ item} : { item :  restaurantsProps}) {
  return (
     <Pressable
         className='flex flex-col items-center justify-center'

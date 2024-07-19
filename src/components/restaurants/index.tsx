@@ -1,6 +1,6 @@
 import { View, Text } from 'react-native';
 import { useState, useEffect } from 'react'
-import { ItemRestaurant } from '../restaurants/cardItem'
+import { ItemRestaurant } from './cardItem'
 
 export interface restaurantsProps {
     id: string
