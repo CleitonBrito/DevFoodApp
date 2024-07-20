@@ -14,7 +14,7 @@ export function Section({name, size, label, action} : Props) {
         <Text className={`${size} font-semibold my-4 self-start`}>{ name }</Text>
 
         <Pressable onPress={action}>
-            <Text>{ label }</Text>
+            <Text className='text-slate-200 bg-green-600 px-2 py-1 rounded-full'>{ label }</Text>
         </Pressable>
     </View>
   );
