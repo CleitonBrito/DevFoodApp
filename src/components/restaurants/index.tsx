@@ -13,7 +13,7 @@ export function Restaurants() {
 
     useEffect(()=>{
         async function getRestaurants(){
-            const response = await fetch("http://localhost:3000/restaurants")
+            const response = await fetch("https://my-json-server.typicode.com/CleitonBrito/RotaDosSaboresFakerApi/restaurants")
             const data = await response.json()
             setRestaurants(data)
         }

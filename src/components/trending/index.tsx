@@ -18,7 +18,7 @@ export function TrendingFoods() {
 
     useEffect(() => {
         async function getFoods(){
-            const response = await fetch("http://localhost:3000/foods")
+            const response = await fetch("https://my-json-server.typicode.com/CleitonBrito/RotaDosSaboresFakerApi/foods")
             const data = await response.json()
             setFoods(data)
         }
