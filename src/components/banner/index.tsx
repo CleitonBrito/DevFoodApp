@@ -11,7 +11,7 @@ export function Banner() {
         <FlatList
             className='w-full h-36 md:h-50 mt-5'
             data={images}
-            renderItem={ ({ item, index }) =>
+            renderItem={ ({ item, index }) => (
                 <Pressable 
                     className="h-full rounded-2xl" 
                     key="1"
@@ -26,7 +26,7 @@ export function Banner() {
                         }}
                     />
                 </Pressable>
-            }
+            )}
             horizontal={true}
             contentContainerStyle={{ gap: 10, paddingHorizontal: 10}}
             showsHorizontalScrollIndicator={false}
