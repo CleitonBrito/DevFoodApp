@@ -29,15 +29,15 @@ export function Banner() {
         { !isDesktop ? (
         <Carousel className='mt-3' indicators={false} touch={true} fade={true}>
             <Carousel.Item>
-                <Image 
-                    className="rounded-2xl h-32 sm:h-40 md:h-56"
-                    source={{ uri : "./src/assets/banner1.png" }}
+                <img 
+                    className="w-full rounded-2xl h-32 sm:h-40 md:h-56"
+                    src={ "src/assets/banner1.png" }
                 />
             </Carousel.Item>
             <Carousel.Item>
-                <Image 
+                <img 
                     className="w-full rounded-xl h-32 sm:h-40 md:h-56"
-                    source={{ uri : "./src/assets/banner2.png" }}
+                    src={ "src/banner2.png" }
                 />
             </Carousel.Item>
         </Carousel>
