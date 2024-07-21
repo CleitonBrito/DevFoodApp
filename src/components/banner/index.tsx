@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { Image } from 'react-native';
 import Carousel from 'react-bootstrap/Carousel';
 
 export function Banner() {
@@ -31,13 +30,13 @@ export function Banner() {
             <Carousel.Item>
                 <img 
                     className="w-full rounded-2xl h-32 sm:h-40 md:h-56"
-                    src={ "src/assets/banner1.png" }
+                    src="https://github.com/CleitonBrito/RotaDosSaboresApp/blob/main/src/assets/banner1.png?raw=true"
                 />
             </Carousel.Item>
             <Carousel.Item>
                 <img 
                     className="w-full rounded-xl h-32 sm:h-40 md:h-56"
-                    src={ "src/banner2.png" }
+                    src="https://github.com/CleitonBrito/RotaDosSaboresApp/blob/main/src/assets/banner2.png?raw=true"
                 />
             </Carousel.Item>
         </Carousel>
